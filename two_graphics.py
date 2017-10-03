@@ -3,12 +3,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 import copy
 
-# mylist = ['1 , 3 , s4', '2', '3', '4']
 x1_list = []
 x2_list = []
 y_list = []
 
-# writer = csv.writer()
 reader = csv.reader(open("file.csv", 'r'))
 
 for row in reader:
@@ -25,12 +23,11 @@ aver_x1 = prMaxMinAver( "x1", x1_list )
 aver_x2 = prMaxMinAver( "x2", x2_list )
 prMaxMinAver( "y", y_list )
 
-# print(aver_x2, aver_x1)
+plt.plot(x1_list)
+plt.plot(x2_list)
+plt.ylabel('some numbers')
+plt.show()
 
-# plt.plot(x1_list)
-# plt.plot(x2_list)
-# plt.ylabel('some numbers')
-# plt.show()
 writer = csv.writer(open("file_if.csv", 'w'))
 reader = csv.reader(open("file.csv", 'r'))
 
