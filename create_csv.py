@@ -4,7 +4,7 @@ import csv
 # mylist = ['1 , 3 , s4', '2', '3', '4']
 nlist = []
 
-writer = csv.writer(open("/home/makskrug/py_prj/file.csv", 'w'))
+writer = csv.writer(open("file.csv", 'w'))
 reader = csv.reader(nlist)
 for x in range(1,400):
 	nlist.append(str(x**2 - 50) + ", " + str(0.001 * x) + ", " + str(x))

@@ -9,7 +9,7 @@ x2_list = []
 y_list = []
 
 # writer = csv.writer()
-reader = csv.reader(open("/home/makskrug/py_prj/file.csv", 'r'))
+reader = csv.reader(open("file.csv", 'r'))
 
 for row in reader:
 	x1_list.append(float(row[0]))
@@ -31,8 +31,8 @@ prMaxMinAver( "y", y_list )
 # plt.plot(x2_list)
 # plt.ylabel('some numbers')
 # plt.show()
-writer = csv.writer(open("/home/makskrug/py_prj/file_if.csv", 'w'))
-reader = csv.reader(open("/home/makskrug/py_prj/file.csv", 'r'))
+writer = csv.writer(open("file_if.csv", 'w'))
+reader = csv.reader(open("file.csv", 'r'))
 
 for row in reader: 
     # print(row)   
