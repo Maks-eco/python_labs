@@ -10,9 +10,9 @@ y_list = []
 reader = csv.reader(open("file.csv", 'r'))
 
 for row in reader:
-	x1_list.append(float(row[0]))
-	x2_list.append(float(row[1]))
-	y_list.append(float(row[2]))
+    x1_list.append(float(row[0]))
+    x2_list.append(float(row[1]))
+    y_list.append(float(row[2]))
 # 	print(row)
 
 def prMaxMinAver( name, arr ):
