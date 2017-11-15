@@ -1,33 +1,36 @@
-print(__doc__)
-
-
-# Code source: Jaques Grobler
-# License: BSD 3 clause
-
-
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+# import pandas.DataFrame as df
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 
-# diabetes = pd.read_csv('output_list.txt', sep=" ", header=None)
-# data.columns = ["a", "b", "c", "etc."]
+data_train = pd.read_csv('text/tar_train.txt', sep=",", low_memory=False)
+data_test = pd.read_csv('text/tar_test.txt', sep=",", low_memory=False)
+nums = 8 #9. temp - temperature in Celsius degrees: 2.2 to 33.30
+print(nums)
+diabetes_X_train = data_train.iloc[:,nums] #10
+diabetes_X_train = diabetes_X_train.values.reshape(-1,1)
+diabetes_X_test = data_test.iloc[:,nums] #10
+diabetes_X_test = diabetes_X_test.values.reshape(-1,1)
+# print(diabetes_X)
+diabetes_y_train = data_train.iloc[:,12]
+diabetes_y_train = diabetes_y_train.values.reshape(-1,1)
+diabetes_y_test = data_test.iloc[:,12]
+diabetes_y_test = diabetes_y_test.values.reshape(-1,1)
+# print(targ_X)
 
-# Load the diabetes dataset
-diabetes = datasets.load_diabetes()
+# # Split the data into training/testing sets
+# diabetes_X_train = diabetes_X[:-20]
+# diabetes_X_test = diabetes_X[-20:]
 
+# # print(diabetes.target)
 
-# Use only one feature
-diabetes_X = diabetes.data[:, np.newaxis, 2]
-
-# Split the data into training/testing sets
-diabetes_X_train = diabetes_X[:-20]
-diabetes_X_test = diabetes_X[-20:]
-
-# Split the targets into training/testing sets
-diabetes_y_train = diabetes.target[:-20]
-diabetes_y_test = diabetes.target[-20:]
-
+# # Split the targets into training/testing sets
+# diabetes_y_train = targ_X[:-20]
+# diabetes_y_test = targ_X[-20:]
+# print(diabetes_y_train)
+# print(diabetes_y_test)
 # Create linear regression object
 regr = linear_model.LinearRegression()
 

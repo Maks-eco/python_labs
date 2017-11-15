@@ -1,0 +1,84 @@
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 12
+Coefficients: 
+ [[ 1.]]
+Mean squared error: 0.00
+Variance score: 1.00
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+10
+Coefficients: 
+ [[-0.3395467]]
+Mean squared error: 6143.89
+Variance score: -0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+9
+Coefficients: 
+ [[-0.26039968]]
+Mean squared error: 6095.16
+Variance score: -0.00
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+4
+Coefficients: 
+ [[ 0.35442229]]
+Mean squared error: 6121.65
+Variance score: -0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+5
+Coefficients: 
+ [[ 0.08511136]]
+Mean squared error: 6106.12
+Variance score: -0.00
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+12
+Coefficients: 
+ [[ 1.]]
+Mean squared error: 0.00
+Variance score: 1.00
+^[[Amakskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+6
+Coefficients: 
+ [[ 0.01411745]]
+Mean squared error: 6135.78
+Variance score: -0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+7
+Coefficients: 
+ [[-0.1998316]]
+Mean squared error: 6147.66
+Variance score: -0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+8
+Coefficients: 
+ [[ 0.88866397]]
+Mean squared error: 6035.67
+Variance score: 0.01
+^[[Amakskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+9
+Coefficients: 
+ [[-0.26039968]]
+Mean squared error: 6095.16
+Variance score: -0.00
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+10
+Coefficients: 
+ [[-0.3395467]]
+Mean squared error: 6143.89
+Variance score: -0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+11
+Coefficients: 
+ [[-14.9073766]]
+Mean squared error: 6214.53
+Variance score: -0.02
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 2_line_regr.py 
+8
+Coefficients: 
+ [[ 0.88866397]]
+Mean squared error: 6035.67
+Variance score: 0.01
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ python3 3_test_regr.py 
+Coefficients: 
+ [ 938.23786125]
+Mean squared error: 2548.07
+Variance score: 0.47
+makskrug@makskrug-Lenovo:~/python_prj/2lab$ 
+
